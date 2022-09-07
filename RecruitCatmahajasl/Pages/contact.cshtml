@@ -1,0 +1,29 @@
+﻿@page
+@model RecruitCatmahajasl.Pages.contactModel
+@{
+}
+<h3>Contact form</h3>
+
+@if(Model.hasData)
+{
+    <p>Hello.Firstname @Model.lastname</p>
+    <p>We have received your message and we will get back to you soon</p>
+    <p>Kindly submit your curriculum vitae on mahajasl@mail.uc.edu</p>
+    }
+
+<div class="container">
+    <form method="post">
+        <label for="fname">First Name</label><br />
+        <input type="text" id="fname" name="firstname"><br />
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="fname" name="lastname"><br />
+        <label for="address">Address</label><br />
+        <input type="text" id=address name="Address"><br />
+        <label for="message">Message</label><br />
+        <textarea id="message" name="message" style="height:200px"></textarea><br />
+
+        <input type="submit" value="Submit" />
+
+    </form>
+
+</div>
